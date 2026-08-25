@@ -44,6 +44,7 @@
   --color-terra: #ab5029;
   --color-terra-dark: #ca6430;
   --color-oker: #e6b665;
+  --color-oker-dark: #c99543;
   --color-mos: #a2bb70;
   --color-mos-dark: #4a5535;
 
@@ -779,6 +780,18 @@ p {
   transform: translateY(-2px);
 }
 
+/* Boekingsknop — okergeel, als derde eigen accent in de hero */
+.btn--book {
+  background-color: var(--color-oker);
+  color: var(--color-text);
+}
+
+.btn--book:hover {
+  background-color: var(--color-oker-dark);
+  color: var(--color-text);
+  transform: translateY(-2px);
+}
+
 .btn--small {
   padding: 0.5rem 1.25rem;
   font-size: 0.75rem;
@@ -884,10 +897,10 @@ p {
 
 
 /* --------------------------------------------------------------------------
-   10. RESPONSIVE — MOBIEL (≤ 768px)
-   Hamburger-navigatie, grids worden enkele kolom, kleinere spacing.
+   10. RESPONSIVE — NAVIGATIE (≤ 960px)
+   De extra boekingsknop past vanaf dit punt in het mobiele menu.
    -------------------------------------------------------------------------- */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
 
   .navbar__toggle {
     display: flex;
@@ -917,6 +930,14 @@ p {
     opacity: 1;
     visibility: visible;
   }
+}
+
+
+/* --------------------------------------------------------------------------
+   11. RESPONSIVE — MOBIEL (≤ 768px)
+   Grids worden enkele kolom en spacing wordt compacter.
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
 
   .grid--2,
   .grid--3,
@@ -935,7 +956,7 @@ p {
 
 
 /* --------------------------------------------------------------------------
-   11. RESPONSIVE — TABLET (769px – 1024px)
+   12. RESPONSIVE — TABLET (769px – 1024px)
    Grids met 3-4 kolommen vallen terug naar 2 kolommen.
    -------------------------------------------------------------------------- */
 @media (min-width: 769px) and (max-width: 1024px) {

@@ -1,8 +1,15 @@
 # Website-instructies
 
+Deze instructies zijn de standaard werkwijze voor **iedere wijziging** aan deze
+GitHub Pages-website. De gebruiker hoeft ze niet per opdracht te herhalen.
+
+- Lees en volg dit bestand vóór je aan een wijziging begint.
+- Onderzoek eerst de bestaande structuur, inhoud en huisstijl.
+- Maak alleen de kleinste wijziging die nodig is voor de opdracht.
 - De productiebranch is main.
 - Wijzig main nooit rechtstreeks.
-- Maak per opdracht een branch met prefix codex/.
+- Werk uitsluitend in een aparte branch of worktree en gebruik voor branches
+  het prefix `codex/`.
 - Push, merge en publiceer uitsluitend na mijn expliciete toestemming.
 - Bewaar nooit wachtwoorden, tokens of API-sleutels in de repository.
 - Dit is een statische GitHub Pages-site zonder Node-project of buildstap. Voeg geen
@@ -14,7 +21,8 @@
   horizontale overflow en fouten of waarschuwingen in de browserconsole.
 - Controleer redirects vanaf hun oorspronkelijke URL en voorkom een terug-knoplus.
 - Voer `git diff --check` uit vóór commit of oplevering.
-- Geef na iedere wijziging een overzicht van gewijzigde bestanden en testresultaten.
+- Geef na iedere wijziging het resultaat, een overzicht van gewijzigde bestanden,
+  de uitgevoerde controles en testresultaten, en eventuele resterende risico's.
 - Controleer na een toegestane publicatie de GitHub Pages-deployment en herhaal de
   relevante controles op de live website.
 
